@@ -21,7 +21,7 @@ def reduce(arr, arr1=nil)
   
   while counter < arr.length
     updated = yield(updated, arr[counter])
-    counter ++
+    counter = counter + 1
   end
   
   updated
