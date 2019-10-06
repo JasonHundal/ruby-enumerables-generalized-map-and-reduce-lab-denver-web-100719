@@ -11,8 +11,8 @@ def map(arr)
 end
 
 def reduce(arr, arr1=nil)
-  if sp
-    accum = sp
+  if arr1
+    updated = arr1
     i = 0
   else
     accum = arr[0]
