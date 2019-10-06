@@ -13,14 +13,14 @@ end
 def reduce(arr, arr1=nil)
   if arr1
     updated = arr1
-    i = 0
+    counter = 0
   else
-    accum = arr[0]
-    i = 1
+    counter = 1
+    updated = arr[0]
   end
   while i < arr.length
-    accum = yield(accum, arr[i])
-    i += 1
+    updated = yield(accum, arr[i])
+    counter ++
   end
-  accum
+  updated
 end
