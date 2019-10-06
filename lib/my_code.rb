@@ -9,3 +9,5 @@ def map(arr)
   end
   updated
 end
+
+arr1
