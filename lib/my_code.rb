@@ -2,10 +2,10 @@
 
 def map(arr)
   updated = []
-  i = 0
-  while i < arr.length
-    new.push(yield(arr[i]))
-    i += 1
+  counter = 0
+  while counter < arr.length
+    new.push(yield(arr[counter]))
+    counter += 1
   end
   updated
 end
