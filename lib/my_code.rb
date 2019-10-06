@@ -1,11 +1,11 @@
 # Your Code Here
 
-def map(s)
-  new = []
+def map(arr)
+  updated = []
   i = 0
-  while i < s.length
-    new.push(yield(s[i]))
+  while i < arr.length
+    new.push(yield(arr[i]))
     i += 1
   end
-  new
+  updated
 end
