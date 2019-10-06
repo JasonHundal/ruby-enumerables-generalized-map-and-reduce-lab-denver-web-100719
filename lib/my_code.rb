@@ -18,9 +18,11 @@ def reduce(arr, arr1=nil)
     counter = 1
     updated = arr[0]
   end
-  while i < arr.length
+  
+  while counter < arr.length
     updated = yield(accum, arr[i])
     counter ++
   end
+  
   updated
 end
