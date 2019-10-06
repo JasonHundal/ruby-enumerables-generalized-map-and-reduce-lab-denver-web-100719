@@ -20,7 +20,7 @@ def reduce(arr, arr1=nil)
   end
   
   while counter < arr.length
-    updated = yield(accum, arr[i])
+    updated = yield(accum, arr[counter])
     counter ++
   end
   
